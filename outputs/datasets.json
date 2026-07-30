@@ -1,0 +1,42 @@
+{
+  "topic": "Efficient fine-tuning of large language models for low-resource languages",
+  "recommended_datasets": [
+    {
+      "name": "Fine-tuning large language models for improved health communication in low-resource languages - PubMed",
+      "description": "## Save citation to file. ## Email citation. Go to My NCBI account settings to confirm your email and then refresh this page. # Fine-tuning large language models for improved health communication in low-resource languages. Nhat Bui1 ,\u00a0Giang Nguyen1 ,\u00a0Nguyen Nguyen1 ,\u00a0Bao Vo1 ,\u00a0Lu...",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39987667?dopt=Abstract",
+      "task": "",
+      "num_papers": 0,
+      "relevance_score": 0.8,
+      "justification": "This dataset is relevant to the topic as it explores fine-tuning large language models for low-resource languages, specifically for health communication, which is a critical application area."
+    },
+    {
+      "name": "Fine-tuning Low-Resource Language Models (LoRA/PEFT) | NivaLabs AI",
+      "description": "Large language models (LLMs) often leave low-resource languages like Swahili or Nigerian Pidgin behind in a world increasingly shaped by multilingual communication. Training models from scratch for these languages is expensive and often impractical due to limited datasets. That\u2019s...",
+      "url": "https://www.nivalabs.ai/blogs/fine-tuning-low-resource-language-models-lora-peft",
+      "task": "",
+      "num_papers": 0,
+      "relevance_score": 0.9,
+      "justification": "This dataset is highly relevant as it focuses on fine-tuning low-resource language models using LoRA/PEFT methods, which is a key aspect of the research topic and addresses the gap of limited evaluation on truly low-resource languages."
+    },
+    {
+      "name": "An Approach to Training and Fine-tuning Large Language Models for Low-Resource Languages | Semantic Scholar",
+      "description": "# An Approach to Training and Fine-tuning Large Language Models for Low-Resource Languages. @article{Sandaruwan2025AnAT, title={An Approach to Training and Fine-tuning Large Language Models for Low-Resource Languages}, author={Udith Sandaruwan and Nimesh Fonseka and Pamith Salwat...",
+      "url": "https://www.semanticscholar.org/paper/An-Approach-to-Training-and-Fine-tuning-Large-for-Sandaruwan-Fonseka/7e4a3d501be2c7b00a651facf523a4691be744bb",
+      "task": "",
+      "num_papers": 0,
+      "relevance_score": 0.7,
+      "justification": "This dataset is relevant as it discusses an approach to training and fine-tuning large language models for low-resource languages, which aligns with the research topic and helps address the gap of lack of systematic comparison of PEFT methods."
+    },
+    {
+      "name": "Fine Tuning LLMs for Low Resource Languages",
+      "description": "Title: Fine Tuning LLMs for Low Resource Languages\n# Fine Tuning LLMs for Low Resource Languages. Shreyas Joshi,Muhammad Shahnawaz Khan,3 Authors,Tanish Jhamtani. 2024 \u00b7 DOI: 10.1109/ICIPCN63822.2024.00090. ### Abstract. Large Language Models (LLMs) hold immense potential, but th...",
+      "url": "https://ai.updf.com/paper-detail/fine-tuning-llms-for-low-resource-languages-joshi-khan-2e1c62eee958af3b579d432e07fa502d8be02647",
+      "task": "",
+      "num_papers": 0,
+      "relevance_score": 0.6,
+      "justification": "This dataset is somewhat relevant as it explores fine-tuning LLMs for low-resource languages, although it may not directly address the research gaps, it still contributes to the broader topic of efficient fine-tuning."
+    }
+  ],
+  "reasoning": "The selection strategy focused on identifying datasets that directly address the research gaps, such as the lack of evaluation on truly low-resource languages and the need for systematic comparison of PEFT methods. Priority was given to datasets that explore fine-tuning methods like LoRA/PEFT and those that apply to critical application areas like health communication. Relevance scores were assigned based on how closely each dataset aligns with the research topic and gaps."
+}

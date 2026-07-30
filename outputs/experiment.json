@@ -1,0 +1,76 @@
+{
+  "topic": "Efficient fine-tuning of large language models for low-resource languages",
+  "methodology": {
+    "overview": "This project aims to investigate efficient fine-tuning methods for large language models on low-resource languages, addressing the lack of evaluation on truly low-resource languages and the need for systematic comparison of PEFT methods under a fixed compute budget.",
+    "steps": [
+      "Select and preprocess low-resource language datasets",
+      "Implement and fine-tune baseline models",
+      "Develop and evaluate the proposed novel approach",
+      "Compare and analyze the results of all models"
+    ],
+    "baseline_models": [
+      "Standard fine-tuning",
+      "LoRA (Low-Rank Adaptation)",
+      "PEFT (Parameter-Efficient Fine-Tuning)"
+    ],
+    "proposed_approach": "Adapted PEFT with dynamic compute budget allocation"
+  },
+  "evaluation": {
+    "metrics": [
+      {
+        "name": "BLEU score",
+        "description": "Measure of translation quality"
+      },
+      {
+        "name": "ROUGE score",
+        "description": "Measure of summarization quality"
+      },
+      {
+        "name": "F1 score",
+        "description": "Measure of classification accuracy"
+      },
+      {
+        "name": "Compute efficiency",
+        "description": "Measure of model training time and resource usage"
+      }
+    ],
+    "evaluation_protocol": "Train/val/test split with 5-fold cross-validation and human evaluation for quality assessment"
+  },
+  "timeline": {
+    "total_duration_weeks": 8.0,
+    "phases": [
+      {
+        "phase": "Data preparation and baseline model implementation",
+        "duration_weeks": 2.0,
+        "deliverables": [
+          "Preprocessed low-resource language datasets",
+          "Implemented baseline models"
+        ]
+      },
+      {
+        "phase": "Proposed approach development and evaluation",
+        "duration_weeks": 3.0,
+        "deliverables": [
+          "Developed and implemented proposed approach",
+          "Evaluated proposed approach on selected datasets"
+        ]
+      },
+      {
+        "phase": "Comparison and analysis",
+        "duration_weeks": 2.0,
+        "deliverables": [
+          "Compared results of all models",
+          "Analyzed and interpreted results"
+        ]
+      },
+      {
+        "phase": "Writing and revisions",
+        "duration_weeks": 1.0,
+        "deliverables": [
+          "Draft of final report",
+          "Revised report based on feedback"
+        ]
+      }
+    ]
+  }
+}
