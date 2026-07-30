@@ -1,0 +1,25 @@
+You are a research assistant identifying gaps in the literature across a set of papers.
+
+Below are structured summaries, novel aspects, and limitations for each paper:
+
+{paper_context}
+
+Based ONLY on the information above, identify research gaps: things the collected papers do not
+adequately address, unresolved limitations shared across multiple papers, or promising directions
+that follow naturally from the novelty/limitations described.
+
+Respond with ONLY a JSON object (no markdown fences, no preamble) with this exact shape:
+
+{{
+  "gaps": [
+    {{
+      "title": "short gap title",
+      "description": "one to three sentences describing the gap",
+      "supporting_paper_ids": ["paper_id_1", "paper_id_2"],
+      "opportunity": "one sentence suggested research direction to address this gap",
+      "confidence": 0.7
+    }}
+  ]
+}}
+
+Only include gaps that are clearly supported by the provided context. confidence is a float between 0 and 1.

@@ -1,6 +1,7 @@
 """
 shared/utils/config.py
 
+<<<<<<< HEAD
 Centralized configuration for all agents in ResearchAgentX.
 Loads settings from environment variables (with sane defaults) so every
 person's module (1-4) can import a single source of truth.
@@ -37,10 +38,28 @@ def _get_float(name: str, default: float) -> float:
         return float(val) if val is not None else default
     except ValueError:
         return default
+=======
+Centralized configuration loading. Reads from environment variables
+(populate a .env file locally; see .env.example at repo root).
+"""
+
+from __future__ import annotations
+
+import os
+from dataclasses import dataclass
+
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+except ImportError:  # dotenv is optional at runtime
+    pass
+>>>>>>> person2-integration
 
 
 @dataclass
 class Settings:
+<<<<<<< HEAD
     # --- General ---
     env: str = field(default_factory=lambda: os.getenv("APP_ENV", "development"))
     log_level: str = field(default_factory=lambda: os.getenv("LOG_LEVEL", "INFO"))
@@ -89,6 +108,13 @@ class Settings:
     # --- Server ---
     host: str = field(default_factory=lambda: os.getenv("PERSON1_HOST", "0.0.0.0"))
     port: int = field(default_factory=lambda: _get_int("PERSON1_PORT", 8001))
+=======
+    anthropic_api_key: str = os.getenv("ANTHROPIC_API_KEY", "")
+    model_name: str = os.getenv("SUMMARY_MODEL", "claude-sonnet-4-6")
+    max_tokens: int = int(os.getenv("MAX_TOKENS", "1500"))
+    request_timeout: int = int(os.getenv("REQUEST_TIMEOUT", "60"))
+    outputs_dir: str = os.getenv("OUTPUTS_DIR", "person_2_summary_gap/outputs")
+>>>>>>> person2-integration
 
 
 settings = Settings()
