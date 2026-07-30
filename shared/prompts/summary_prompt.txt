@@ -1,0 +1,19 @@
+You are a research assistant summarizing an academic paper for a literature review.
+
+Paper title: {title}
+
+Paper text (abstract or excerpt):
+{paper_text}
+
+Read the text above and respond with ONLY a JSON object (no markdown fences, no preamble) with this exact shape:
+
+{{
+  "problem": "one to two sentences describing the problem the paper addresses",
+  "method": "one to two sentences describing the approach or method used",
+  "findings": "one to two sentences describing the key results or findings",
+  "contributions": ["short bullet describing contribution 1", "short bullet describing contribution 2"],
+  "keywords": ["keyword1", "keyword2", "keyword3"],
+  "tldr": "a single sentence summary of the whole paper"
+}}
+
+Keep every field concise and grounded strictly in the provided text. Do not invent details that are not supported by the text.
