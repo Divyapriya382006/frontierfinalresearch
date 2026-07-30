@@ -1,0 +1,17 @@
+{
+  "num_papers_analyzed": 1,
+  "limitations_by_paper": [
+    {
+      "paper_id": "p1",
+      "limitations": []
+    }
+  ],
+  "novelty_by_paper": [
+    {
+      "paper_id": "p1",
+      "novel_aspects": []
+    }
+  ],
+  "gaps": [],
+  "errors": []
+}
