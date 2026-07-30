@@ -1,14 +1,20 @@
 """
 shared/utils/helpers.py
 
-<<<<<<< HEAD
 General-purpose helper functions shared across agents.
 """
 
+from __future__ import annotations
+
+import json
 import re
+import time
 import unicodedata
 from datetime import datetime, timezone
-from typing import Optional
+from functools import wraps
+from typing import Any, Callable, Optional, TypeVar
+
+T = TypeVar("T")
 
 
 def normalize_text(text: Optional[str]) -> str:
@@ -58,19 +64,6 @@ def chunked(iterable, size: int):
     """Yield successive `size`-sized chunks from a list."""
     for i in range(0, len(iterable), size):
         yield iterable[i : i + size]
-=======
-Small reusable helpers shared across every person's module.
-"""
-
-from __future__ import annotations
-
-import json
-import re
-import time
-from functools import wraps
-from typing import Any, Callable, TypeVar
-
-T = TypeVar("T")
 
 
 def extract_json(text: str) -> Any:
@@ -89,7 +82,6 @@ def extract_json(text: str) -> Any:
     except json.JSONDecodeError:
         pass
 
-    # Fallback: find the widest {...} or [...] span
     for open_ch, close_ch in (("{", "}"), ("[", "]")):
         start = cleaned.find(open_ch)
         end = cleaned.rfind(close_ch)
@@ -145,4 +137,3 @@ def chunk_text(text: str, max_chars: int = 4000) -> list[str]:
     if current:
         chunks.append(current)
     return chunks
->>>>>>> person2-integration
